@@ -1,10 +1,7 @@
 import { useEffect, useState } from "react";
 import "./index.css";
-import dotenv from "dotenv";
 
-dotenv.config();
-
-const API_URL = process.env.API_URL;
+const API_URL = import.meta.env.API_URL;
 
 function App() {
   const emptyForm = {
